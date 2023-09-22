@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="hero container">
+        <div class="hero-content">
+          <h2 class="logo">Favs Film</h2>
+          <button class="btn btn-myList">My list</button>
+        </div>
+        <div class="hero-searchForm">
+          <form id="searchForm">
+            <input
+              type="text"
+              id="movieTitle"
+              name="movieTitle"
+              placeholder="Search for a movie"
+            />
+            <button type="submit" class="btn btn-search">Search</button>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section class="movies container">
+      <div id="movie-list" class="movie-list">
+        <h2 style="text-align: center">Start Exploring <br />New Movies</h2>
+      </div>
+    </section>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

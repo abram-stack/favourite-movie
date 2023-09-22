@@ -1,0 +1,87 @@
+html,body{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+.logo{
+  color: rgb(222, 130, 130);
+  font-size: 2rem;
+  font-family: 'Rubik Mono One', sans-serif;
+  text-shadow: 5px 5px rgb(230, 201, 157);
+  -webkit-text-stroke: 2px rgb(119, 10, 10);
+}
+
+header{
+  height: 30vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/image/cinemaBig.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* LAYOUT */
+.container{
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content{
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-searchForm{
+  border: 2px solid rgb(119, 10, 10);
+  border-radius: 5px;
+  background: rgb(242, 161, 149);
+  padding: 10px 5px;
+}
+
+.movies {
+  padding: 10px 20px;
+  height: 70vh;
+  padding-top: 40px;
+}
+
+/* COMPONENTS */
+.btn{
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+}
+.btn-myList{
+  padding: 10px 15px;
+  align-self: center;
+  margin-right: 10px ;
+  background: rgb(228,185,184);
+  background: linear-gradient(90deg, rgba(228,185,184,1) 2%, rgba(247,228,169,1) 33%, rgba(255,253,69,1) 80%);
+}  
+
+
+.hero-searchForm input[type='text']{
+  padding: 10px 20px;
+  width: 500px;
+  font-family: inherit;
+}
+
+.hero-searchForm form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-search{
+  padding: 10px 20px;
+  margin:0 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
