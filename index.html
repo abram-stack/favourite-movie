@@ -19,25 +19,33 @@
           <h2 class="logo">Favs Film</h2>
           <button class="btn btn-myList">My list</button>
         </div>
-        <div class="hero-searchForm">
-          <form id="searchForm">
-            <input
-              type="text"
-              id="movieTitle"
-              name="movieTitle"
-              placeholder="Search for a movie"
-            />
-            <button type="submit" class="btn btn-search">Search</button>
-          </form>
+        <div class="hero-search">
+          <input
+            type="text"
+            id="movieTitle"
+            name="movieTitle"
+            placeholder="Search for a movie"
+          />
+          <button type="submit" id="searchBtn" class="btn btn-search"
+            >Search</button
+          >
         </div>
       </div>
     </header>
 
-    <section class="movies container">
-      <div id="movie-list" class="movie-list">
-        <h2 style="text-align: center">Start Exploring <br />New Movies</h2>
+    <main class="movies container">
+      <h2 id="movies-subtitle" style="text-align: center"
+        >Start Exploring <br />New Movies</h2
+      >
+      <div id="movies-list">
+        <div class="card">
+          <div class="card-poster">
+            <img src="" />
+          </div>
+          <div class="card-content"> </div>
+        </div>
       </div>
-    </section>
+    </main>
     <script src="index.js" type="module"></script>
   </body>
 </html>

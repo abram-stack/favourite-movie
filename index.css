@@ -40,7 +40,7 @@ header{
   height: 100%;
 }
 
-.hero-searchForm{
+.hero-search{
   border: 2px solid rgb(119, 10, 10);
   border-radius: 5px;
   background: rgb(242, 161, 149);
@@ -51,6 +51,7 @@ header{
   padding: 10px 20px;
   height: 70vh;
   padding-top: 40px;
+  border: 1px solid red;
 }
 
 /* COMPONENTS */
@@ -65,16 +66,17 @@ header{
   margin-right: 10px ;
   background: rgb(228,185,184);
   background: linear-gradient(90deg, rgba(228,185,184,1) 2%, rgba(247,228,169,1) 33%, rgba(255,253,69,1) 80%);
+  cursor: pointer;
 }  
 
 
-.hero-searchForm input[type='text']{
+.hero-search input[type='text']{
   padding: 10px 20px;
   width: 500px;
   font-family: inherit;
 }
 
-.hero-searchForm form{
+.hero-search{
   display: flex;
   justify-content: space-between;
 }
