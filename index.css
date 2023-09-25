@@ -3,7 +3,9 @@ html,body{
   margin: 0;
   font-family: 'Karla', sans-serif;
 }
-
+h1,h2,h3,p{
+  margin: 0;
+}
 .logo{
   color: rgb(222, 130, 130);
   font-size: 2rem;
@@ -18,6 +20,15 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* TYPOGRAPHY  */
+.card-title{
+  font-size: 1.5rem;
+}
+.card-rate, .card-description{
+  color: darkslategrey;
+}
+
 
 /* LAYOUT */
 .container{
@@ -45,14 +56,14 @@ header{
   border-radius: 5px;
   background: rgb(242, 161, 149);
   padding: 10px 5px;
+  margin-top: 3.5rem;
 }
 
 .movies {
-  padding: 10px 20px;
   height: 70vh;
   padding-top: 40px;
-  border: 1px solid red;
 }
+
 
 /* COMPONENTS */
 .btn{
@@ -86,4 +97,56 @@ header{
   margin:0 10px;
   border: 1px solid black;
   cursor: pointer;
+}
+.btn-add{
+  padding: 0;
+}
+.card {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 150px;
+  padding-bottom: 1rem;
+  margin-top: 1.5rem;
+  border-bottom: 1px rgb(119, 10, 10) solid;
+}
+.card-poster{
+  text-align: center;
+  flex: 10%
+}
+.card-content{
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+  overflow: hidden;
+}
+.card-content-header{
+  display: flex;
+  gap: 10px;
+}
+.card-content-action{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.card-poster img{
+  width: 100%;
+  height: 100%;
+  min-width: 99px;
+  max-width: 120px;
+}
+
+.btn-add{
+  padding:.2rem .4rem;
+  background: none;
+  border: 1px solid lightslategray;
+  cursor: pointer;
+}
+.btn-add:hover{
+  background: rgb(228, 185, 184);
+  background: linear-gradient(90deg, rgba(228, 185, 184, 1) 2%, rgba(247, 228, 169, 1) 33%, rgba(255, 253, 69, 1) 80%);
+  border: 1px solid rgb(119, 10, 10);
+  transition: border color .3s ease-in;
 }
