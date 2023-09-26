@@ -7,7 +7,7 @@ import { database } from './appSettings.js';
 
 const myListEl = document.getElementById('my-list');
 const favsMovieDB = ref(database, 'movies');
-
+const modalRemoveEl = document.getElementById('modal-remove')
 
 onValue(favsMovieDB, function (snapshot) {
   if (snapshot.exists()) {
@@ -71,7 +71,10 @@ async function renderHtml(movie) {
     if (e.target.dataset.removeFav) {
       const dataInDB = ref(database, `movies/${e.target.dataset.removeFav}`)
       remove(dataInDB)
-      console.log(`deleted ${e.target.dataset.removeFav}`)
+      modalRemoveEl.style.display = 'inline'
+      setTimeout(function () {
+        modalRemoveEl.style.display = 'none'
+      }, 3000)
     }
   })
 }

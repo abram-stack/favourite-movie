@@ -5,7 +5,7 @@ const moviesListEl = document.getElementById('movies-list')
 const moviesSubEl = document.getElementById('movies-subtitle')
 const addFavMovieEl = document.getElementById('add-fav-movie')
 const moviesContainer = document.getElementById('movies-container')
-
+const modalAddEl = document.getElementById('modal-add')
 // DB Config Firestore
 import { ref, push } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js'
 import {database } from './appSettings.js'
@@ -51,7 +51,8 @@ async function renderHtml(movie) {
     
     let { Title, Poster, Runtime, imdbRating, Genre, Plot, imdbID } = movieDetails;
 
-     moviesListEl.innerHTML += `  
+  moviesListEl.innerHTML += `  
+  
           <div class='card'>
             <div class='card-poster'>
               <img src='${Poster}' />
@@ -72,10 +73,16 @@ async function renderHtml(movie) {
             </div>
           </div>
           `;
+  
 }
+
+
 moviesContainer.addEventListener('click', function (e) {
   if (e.target.dataset.addFav) {
     push(favsMovieDB, e.target.dataset.addFav)
-
+    modalAddEl.style.display = 'inline'
+    setTimeout(function(){
+      modalAddEl.style.display = 'none'
+    }, 3000)
   }
 })

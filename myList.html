@@ -22,9 +22,15 @@
     </header>
 
     <main id="movies-container" class="movies container">
-      <h2 id="movies-subtitle" class="movies-subtitle"
-        >Recently Added to <span class="movies-fav">my list</span></h2
-      >
+      <div class="movies-container-header">
+        <h2 id="movies-subtitle" class="movies-subtitle movies-fav">my list</h2>
+        <a href="/" class="btn btn-back">🎬 Go Back to Search </a>
+      </div>
+      <div class="modal modal-remove" id="modal-remove">
+        <div class="modal-inner" id="modal-inner">
+          <h2>Movie removed from DB</h2>
+        </div>
+      </div>
       <div id="my-list">
         <!-- later to be added in JS -->
       </div>
