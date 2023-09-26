@@ -10,37 +10,25 @@
       href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500&family=Rubik+Mono+One&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Favs Movie</title>
   </head>
   <body>
     <header>
       <div class="hero container">
         <div class="hero-content">
           <h2 class="logo">Favs Film</h2>
-          <a href="myList.html" class="btn btn-myList">My list</a>
-        </div>
-        <div class="hero-search">
-          <input
-            type="text"
-            id="movieTitle"
-            name="movieTitle"
-            placeholder="Search for a movie"
-          />
-          <button type="submit" id="searchBtn" class="btn btn-search"
-            >Search</button
-          >
         </div>
       </div>
     </header>
 
     <main id="movies-container" class="movies container">
-      <h2 id="movies-subtitle" style="text-align: center"
-        >Start Exploring <br />New Movies</h2
+      <h2 id="movies-subtitle" class="movies-subtitle"
+        >Recently Added to <span class="movies-fav">my list</span></h2
       >
-      <div id="movies-list">
+      <div id="my-list">
         <!-- later to be added in JS -->
       </div>
     </main>
-    <script src="index.js" type="module"></script>
+    <script src="myList.js" type="module"></script>
   </body>
 </html>
